@@ -283,3 +283,12 @@ header{
     object-fit:contain;
     filter:drop-shadow(0 0 12px rgba(255,255,255,.35));
 }
+
+.plan-icon3{
+    width:70px;
+    height:70px;
+    display:block;
+    margin:0 auto 55px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 12px rgba(255,255,255,.35));
+}
