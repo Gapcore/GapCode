@@ -227,11 +227,13 @@ header{
 .plan-card h3{
     font-size:2rem;
     margin-bottom:15px;
+    text-align: center;
 }
 
 .plan-desc{
     color:#bdbdbd;
     margin-bottom:25px;
+    text-align: center;
 }
 
 .plan-card ul{
@@ -260,4 +262,24 @@ header{
 
 .plan-card button:hover{
     background:#9333ea;
+}
+
+/* img planos */
+
+.plan-icon1{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:0 auto 25px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 12px rgba(255,255,255,.35));
+}
+
+.plan-icon2{
+    width:70px;
+    height:70px;
+    display:block;
+    margin:0 auto 55px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 12px rgba(255,255,255,.35));
 }
