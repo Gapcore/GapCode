@@ -62,7 +62,7 @@ header{
 }
 
 .nav-links a:hover{
-    color:#9d4edd;
+    color: #9d4edd;
 }
 
 .call-btn{
@@ -232,7 +232,7 @@ header{
 
 .plan-desc{
     color:#bdbdbd;
-    margin-bottom:25px;
+    margin-bottom:40px;
     text-align: center;
 }
 
