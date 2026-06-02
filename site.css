@@ -268,7 +268,7 @@ header{
 .plans{
     max-width:1200px;
     margin:0 auto;
-    padding:150px 20px; /* era 120px */
+    padding:150px 20px;
     position:relative;
     z-index:2;
 }
@@ -383,4 +383,59 @@ html {
     opacity: 1;
 
     transform: scale(1.05);
+}
+
+/* FUNCIONALIDADES */
+
+.features{
+    max-width:1200px;
+    margin:120px auto;
+    padding:0 20px;
+    position:relative;
+    z-index:2;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+
+    box-shadow:
+        0 0 15px rgba(123,44,191,.25),
+        0 0 35px rgba(123,44,191,.15);
+
+    transition:.35s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    border-color:#7b2cbf;
+
+    box-shadow:
+        0 0 25px rgba(123,44,191,.45),
+        0 0 60px rgba(123,44,191,.25);
+}
+
+.feature-card i{
+    font-size:3rem;
+    color:#9333ea;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#bdbdbd;
+    line-height:1.6;
 }
