@@ -265,6 +265,14 @@ header{
     background:#9333ea;
 }
 
+.plans{
+    max-width:1200px;
+    margin:0 auto;
+    padding:150px 20px; /* era 120px */
+    position:relative;
+    z-index:2;
+}
+
 /* img planos */
 
 .plan-icon1{
@@ -292,4 +300,44 @@ header{
     margin:0 auto 55px;
     object-fit:contain;
     filter:drop-shadow(0 0 12px rgba(255,255,255,.35));
+}
+
+/* botão saiba mais (planos) */
+html {
+    scroll-behavior: smooth;
+}
+
+ /* clientes */
+
+
+.clients{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.clients-title{
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.clients-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.clients-logos img{
+    max-width: 220px;
+    max-height: 120px;
+    object-fit: contain;
+    opacity: .8;
+    transition: .3s;
+}
+
+.clients-logos img:hover{
+    opacity: 1;
+    transform: scale(1.05);
 }

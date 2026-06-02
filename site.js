@@ -19,3 +19,14 @@ for(let i = 0; i < 120; i++){
 
     particles.appendChild(star);
 }
+
+const btnSaibaMais = document.querySelector(".btn-secondary");
+
+btnSaibaMais.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.querySelector("#planos").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
