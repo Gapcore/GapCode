@@ -309,35 +309,78 @@ html {
 
  /* clientes */
 
-
 .clients{
-    padding: 80px 20px;
-    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    max-width: 1200px;
+
+      height: 120px;
+
+
+    margin: 40px auto 20px auto;
+
+    padding: 15px 30px;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 0 20px rgba(147,51,234,.20),
+        0 0 40px rgba(147,51,234,.10);
+
+    overflow: hidden;
 }
 
 .clients-title{
-    color: #bdbdbd;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
+    text-align: center;
+
+    color: #8f8f8f;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
 }
 
 .clients-logos{
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    gap: 80px;
-    flex-wrap: wrap;
 }
 
 .clients-logos img{
     max-width: 220px;
-    max-height: 120px;
+
+    max-height: 160px;
+
     object-fit: contain;
-    opacity: .8;
+
+    opacity: .85;
+
     transition: .3s;
+    height: 150px;
+
+   display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:-40px;
+
 }
 
 .clients-logos img:hover{
     opacity: 1;
+
     transform: scale(1.05);
 }
