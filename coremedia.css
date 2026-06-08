@@ -606,3 +606,15 @@ body{
 
     transform:scale(1.15);
 }
+
+.btn-zap{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    border:none;
+    border-radius:14px;
+    padding:14px 20px;
+    font-weight:600;
+    transition:.3s;
+}
