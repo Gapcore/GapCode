@@ -1,58 +1,141 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+
+    <title>Contato - GapCore</title>
+
+    <!-- Fonte Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="contato.css">
 </head>
+
 <body>
 
     <section class="contato">
+
         <div class="container">
 
-            <div class="titulo">
-                <h1>Entre em Contato</h1>
-                <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+            <!-- FORMULÁRIO -->
+            <div class="form-area">
+
+                <div class="titulo">
+                    <h1>Entre em Contato</h1>
+
+                    <p>
+                        Preencha o formulário abaixo e nossa equipe entrará em contato.
+                    </p>
+                </div>
+
+                <form class="formulario" id="contatoForm">
+
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu email"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            placeholder="(11) 99999-9999"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+
+                        <textarea
+                            id="mensagem"
+                            rows="6"
+                            placeholder="Digite sua mensagem..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Enviar Contato
+                    </button>
+
+                </form>
+
+                <!-- CARD DE SUCESSO -->
+                <div id="successCard" class="success-card">
+
+                    <div class="success-icon">
+                        🚀
+                    </div>
+
+                    <h2>Mensagem Recebida</h2>
+
+                    <p>
+                        Obrigado pelo interesse na GapCore.
+                        <br>
+                        Nossa equipe entrará em contato em breve.
+                    </p>
+
+                </div>
+
             </div>
 
-            <form class="formulario" id="contatoForm">
+            <!-- ÁREA DA LOGO -->
+            <div class="logo-area">
 
-                <div class="campo">
-                    <label>Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <img src="foto.png" alt="GapCore">
+
+                <p>
+                    Automatizamos processos,
+                    aumentamos conversões e aceleramos o crescimento
+                    da sua empresa através de Inteligência Artificial.
+                </p>
+
+                <div class="logo-features">
+
+                    <div>
+                        🤖 Automação com IA
+                    </div>
+
+                    <div>
+                        📈 Crescimento de Negócios
+                    </div>
+
+                    <div>
+                        ⚡ Processos Inteligentes
+                    </div>
+
                 </div>
 
-                <div class="campo">
-                    <label>Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email" required>
-                </div>
-
-                <div class="campo">
-                    <label>Telefone</label>
-                    <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
-                </div>
-
-                <div class="campo">
-            <label>Mensagem</label>
-            <textarea
-                id="mensagem"
-                placeholder="Digite sua mensagem..."
-                rows="6"
-                required>
-            </textarea>
-                </div>
-
-                <button type="submit">
-                    Enviar Contato
-                </button>
-
-            </form>
+            </div>
 
         </div>
+
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="contato.js"></script>
 
 </body>
+
 </html>
+```
