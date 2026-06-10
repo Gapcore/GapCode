@@ -60,5 +60,5 @@ app.get("/", (req, res) => {
 
 // Inicialização
 app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000");
+    console.log("Servidor rodando em https://gapcore.setupx.pro/contato.html");
 });
