@@ -721,3 +721,31 @@ body{
     font-weight:600;
     transition:.3s;
 }
+
+@media(max-width:768px){
+
+    .hero-left h1{
+        font-size:3rem;
+        line-height:1;
+    }
+
+     .benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        border-right:none !important;
+        border-bottom:1px solid rgba(168,85,247,.15);
+    }
+
+    .process-grid{
+        flex-wrap:wrap;
+         padding:0 15px;
+    }
+
+    .step-arrow{
+        display:none;
+    }
+
+
+}
