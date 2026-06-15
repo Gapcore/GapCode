@@ -441,7 +441,7 @@ html {
 
 }
 
-<<<<<<< HEAD
+
 /* ===== MOBILE ===== */
 @media (max-width:768px){
 
@@ -499,13 +499,11 @@ html {
         margin-top:50px;
     }
 
-}
+
 
 .mobile-logo{
     display:none;
 }
-
-@media (max-width:768px){
 
     .mobile-logo{
         display:block;
@@ -529,11 +527,9 @@ html {
 
     .buttons{
         margin-top:50px;
-    }
-=======
-/* ===== RESPONSIVO ===== */
+        }
+    
 
-@media (max-width: 768px){
 
     /* Navbar */
     .navbar{
@@ -623,11 +619,8 @@ html {
         padding: 25px;
     }
 
-}
 
-/* Telas muito pequenas */
 
-@media (max-width: 480px){
 
     .logo{
         font-size: 22px;
@@ -649,6 +642,5 @@ html {
     .section-title h2{
         font-size: 1.7rem;
     }
-
->>>>>>> 3e73a3030aa31533cad7a6925697cd4d00a0b1ce
-}
+ 
+ }   

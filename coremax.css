@@ -746,6 +746,10 @@ body{
     .step-arrow{
         display:none;
     }
+ 
 
+     .hero-right img{
+        filter:none;
+    }
 
 }
