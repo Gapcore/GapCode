@@ -1,0 +1,44 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Secrets / ambiente
+.env
+.env.*
+!.env.example
+backend/.env
+
+# OneNote / Office temporários
+*.onetoc2
+**/Abrir Bloco de Anotações*
+*.one
+~$*
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs e cache
+*.log
+npm-debug.log*
+.npm/
+.cache/
+dist/
+build/
+tmp/
+temp/
+
+# Python (geradores locais)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PowerPoint / exports temporários locais (opcional manter pptx; ignore caches)
+*.tmp
+*.temp
