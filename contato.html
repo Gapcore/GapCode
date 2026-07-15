@@ -4,94 +4,315 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - GapCore</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Contato | GapCore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="contato.css">
 </head>
 
 <body>
 
-  <section class="contato">
-    <div class="container">
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--secondary" aria-hidden="true"></div>
 
-      <div class="form-area">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <img src="foto.png" alt="GapCore">
+      <span>GAPCORE</span>
+    </a>
+    <nav class="top-nav">
+      <a href="index.html">Início</a>
+      <a href="coreflow.html">CoreFlow</a>
+      <a href="coremedia.html">CoreMedia</a>
+      <a href="coremax.html">GapCore MAX</a>
+    </nav>
+    <a class="top-wa" href="https://wa.me/5531980380576?text=Olá,%20quero%20conhecer%20a%20GapCore." target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp"></i> WhatsApp
+    </a>
+  </header>
+
+  <!-- HERO + FORMULÁRIO -->
+  <section class="hero-contact">
+    <div class="hero-wrap">
+
+      <div class="form-panel reveal">
         <div class="titulo">
-          <h1>Entre em Contato</h1>
-          <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
-        </div>
-
-        <form class="formulario" id="contatoForm" novalidate>
-          <div class="campo">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required>
-          </div>
-
-          <div class="campo">
-            <label for="empresa">Empresa</label>
-            <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa" autocomplete="organization" required>
-          </div>
-
-          <div class="campo">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
-          </div>
-
-          <div class="campo">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="email" required>
-          </div>
-
-          <div class="campo">
-            <label for="servico">Serviço</label>
-            <select id="servico" name="servico" required>
-              <option value="" disabled selected>Selecione um serviço</option>
-              <option value="CoreFlow">CoreFlow — Automação Inteligente</option>
-              <option value="CoreMedia">CoreMedia — Redes Sociais</option>
-              <option value="GapCore MAX">GapCore MAX — Solução Completa</option>
-              <option value="Outro">Outro / Quero saber mais</option>
-            </select>
-          </div>
-
-          <div class="campo">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
-          </div>
-
-          <p id="formError" class="form-error" hidden role="alert"></p>
-
-          <button type="submit" id="submitBtn">Enviar Contato</button>
-        </form>
-
-        <div id="successCard" class="success-card" aria-live="polite">
-          <div class="success-icon">🚀</div>
-          <h2>Mensagem Recebida</h2>
-          <p>
-            Obrigado pelo interesse na GapCore.<br>
-            Nossa equipe entrará em contato em breve.
+          <p class="eyebrow">Fale com a GapCore</p>
+          <h1>Vamos transformar sua empresa com <span>Inteligência Artificial</span>.</h1>
+          <p class="lead">
+            Nossa equipe analisa o seu negócio antes de apresentar a melhor solução —
+            com foco em automação, atendimento e crescimento real.
           </p>
         </div>
-      </div>
 
-      <div class="logo-area">
-        <img src="foto.png" alt="GapCore">
-        <p>
-          Automatizamos processos,
-          aumentamos conversões e aceleramos o crescimento
-          da sua empresa através de Inteligência Artificial.
-        </p>
-        <div class="logo-features">
-          <div>🤖 Automação com IA</div>
-          <div>📈 Crescimento de Negócios</div>
-          <div>⚡ Processos Inteligentes</div>
+        <div class="form-card">
+          <form class="formulario" id="contatoForm" novalidate>
+
+            <div class="campo">
+              <label for="nome"><i class="bi bi-person"></i> Nome</label>
+              <div class="input-wrap">
+                <i class="bi bi-person input-ico"></i>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="empresa"><i class="bi bi-building"></i> Empresa</label>
+              <div class="input-wrap">
+                <i class="bi bi-building input-ico"></i>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa" autocomplete="organization" required>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="campo">
+                <label for="telefone"><i class="bi bi-phone"></i> WhatsApp</label>
+                <div class="input-wrap">
+                  <i class="bi bi-whatsapp input-ico"></i>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="email"><i class="bi bi-envelope"></i> Email</label>
+                <div class="input-wrap">
+                  <i class="bi bi-envelope input-ico"></i>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="servico"><i class="bi bi-lightning-charge"></i> Serviço</label>
+              <div class="input-wrap">
+                <i class="bi bi-lightning-charge input-ico"></i>
+                <select id="servico" name="servico" required>
+                  <option value="" disabled selected>Selecione um serviço</option>
+                  <option value="CoreFlow">CoreFlow — Automação Inteligente</option>
+                  <option value="CoreMedia">CoreMedia — Redes Sociais</option>
+                  <option value="GapCore MAX">GapCore MAX — Solução Completa</option>
+                  <option value="Outro">Outro / Quero saber mais</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem"><i class="bi bi-chat-dots"></i> Mensagem</label>
+              <div class="input-wrap input-wrap--textarea">
+                <i class="bi bi-chat-dots input-ico"></i>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte brevemente o desafio da sua empresa..." required></textarea>
+              </div>
+            </div>
+
+            <p id="formError" class="form-error" hidden role="alert"></p>
+
+            <button type="submit" id="submitBtn" class="btn-submit">
+              🚀 Solicitar Demonstração
+            </button>
+
+            <p class="form-note">Resposta em até 24h úteis · Sem compromisso</p>
+          </form>
+
+          <div id="successCard" class="success-card" aria-live="polite">
+            <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+            <h2>Mensagem recebida</h2>
+            <p>
+              Obrigado pelo interesse na GapCore.<br>
+              Nossa equipe analisará seu negócio e entrará em contato em breve.
+            </p>
+          </div>
         </div>
       </div>
+
+      <aside class="info-panel reveal">
+        <div class="info-brand">
+          <img src="foto.png" alt="GapCore">
+          <p>Soluções inteligentes de IA para empresas que querem crescer com menos esforço operacional.</p>
+        </div>
+
+        <ul class="checklist">
+          <li><i class="bi bi-check-circle-fill"></i> Especialistas em IA</li>
+          <li><i class="bi bi-check-circle-fill"></i> Automação personalizada</li>
+          <li><i class="bi bi-check-circle-fill"></i> Atendimento humanizado</li>
+          <li><i class="bi bi-check-circle-fill"></i> Implantação rápida</li>
+          <li><i class="bi bi-check-circle-fill"></i> Suporte contínuo</li>
+        </ul>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <span class="metric-ico"><i class="bi bi-lightning-charge-fill"></i></span>
+            <strong>Economia de tempo</strong>
+            <span>Menos trabalho manual</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-ico"><i class="bi bi-robot"></i></span>
+            <strong>Atendimento 24h</strong>
+            <span>IA sempre ativa</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-ico"><i class="bi bi-graph-up-arrow"></i></span>
+            <strong>Crescimento</strong>
+            <span>Mais oportunidades</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-ico"><i class="bi bi-bullseye"></i></span>
+            <strong>Conversão</strong>
+            <span>Leads respondidos</span>
+          </div>
+        </div>
+      </aside>
 
     </div>
   </section>
 
-  <!-- SDK primeiro (síncrono), depois contato.js com cache-bust -->
+  <!-- BENEFÍCIOS -->
+  <section class="section benefits reveal">
+    <div class="section-head">
+      <p class="eyebrow">Vantagens</p>
+      <h2>Por que escolher a <span>GapCore</span>?</h2>
+      <p>Tecnologia, estratégia e acompanhamento — em um único parceiro.</p>
+    </div>
+
+    <div class="benefit-grid">
+      <article class="benefit-card">
+        <i class="bi bi-person-hearts"></i>
+        <h3>Atendimento personalizado</h3>
+        <p>Cada solução é moldada à realidade do seu negócio.</p>
+      </article>
+      <article class="benefit-card">
+        <i class="bi bi-puzzle"></i>
+        <h3>Projetos sob medida</h3>
+        <p>Sem pacotes genéricos. Automação alinhada aos seus processos.</p>
+      </article>
+      <article class="benefit-card">
+        <i class="bi bi-gear-wide-connected"></i>
+        <h3>Especialistas em automação</h3>
+        <p>Equipe focada em IA, fluxos e integração de sistemas.</p>
+      </article>
+      <article class="benefit-card">
+        <i class="bi bi-cpu"></i>
+        <h3>Tecnologia de ponta</h3>
+        <p>Stack moderna para performance, estabilidade e escala.</p>
+      </article>
+      <article class="benefit-card">
+        <i class="bi bi-stars"></i>
+        <h3>Integração com IA</h3>
+        <p>Assistentes que entendem, respondem e executam ações.</p>
+      </article>
+      <article class="benefit-card">
+        <i class="bi bi-headset"></i>
+        <h3>Suporte contínuo</h3>
+        <p>Acompanhamento, ajustes e evolução após a implantação.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="section process reveal">
+    <div class="section-head">
+      <p class="eyebrow">Método</p>
+      <h2>Como <span>funciona</span></h2>
+      <p>Do primeiro contato à solução no ar — com clareza em cada etapa.</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-step">
+        <span class="step-num">01</span>
+        <h3>Você envia o formulário</h3>
+        <p>Conta o desafio e o serviço de interesse.</p>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">02</span>
+        <h3>Analisamos seu negócio</h3>
+        <p>Mapeamos processos, canais e oportunidades.</p>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">03</span>
+        <h3>Agendamos uma reunião</h3>
+        <p>Apresentamos a melhor estratégia para o seu caso.</p>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">04</span>
+        <h3>Implantamos a solução</h3>
+        <p>Configuração, testes, treinamento e suporte.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- DEPOIMENTO -->
+  <section class="section testimonial reveal">
+    <div class="testimonial-card">
+      <div class="stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>
+        “A GapCore transformou completamente nosso atendimento. A Sofia responde, agenda e organiza tudo pelo WhatsApp — sem perder o tom humano.”
+      </blockquote>
+      <div class="author">
+        <div class="avatar" aria-hidden="true">CS</div>
+        <div>
+          <strong>Espaço Cris Sales</strong>
+          <span>Case real · Assistente IA · GapCore</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq reveal">
+    <div class="section-head">
+      <p class="eyebrow">Dúvidas</p>
+      <h2>Perguntas <span>frequentes</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Quanto tempo leva a implantação?</summary>
+        <p>Em geral, de 7 a 14 dias úteis para o CoreFlow, dependendo da complexidade e das integrações necessárias.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Preciso trocar meu WhatsApp?</summary>
+        <p>Não. Conectamos a solução ao número da sua empresa e configuramos o fluxo com a identidade do seu negócio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Vocês oferecem suporte?</summary>
+        <p>Sim. Após a implantação, acompanhamos resultados, fazemos ajustes e oferecemos suporte contínuo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Posso cancelar quando quiser?</summary>
+        <p>Trabalhamos com planos claros e transparência. Você pode avaliar a continuidade conforme o acordo do seu plano.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <img src="foto.png" alt="">
+    <p>GapCore · Inteligência Artificial aplicada ao crescimento da sua empresa.</p>
+    <a href="index.html">Voltar ao início</a>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="contato.js?v=20260326"></script>
+  <script src="contato.js?v=20260326-ui"></script>
+  <script>
+    /* UI only — não interfere no envio do formulário */
+    (function () {
+      const nodes = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        nodes.forEach((n) => n.classList.add("is-visible"));
+        return;
+      }
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      nodes.forEach((n) => io.observe(n));
+    })();
+  </script>
 
 </body>
 

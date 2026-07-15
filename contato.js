@@ -95,7 +95,9 @@
   function setLoading(isLoading) {
     if (!submitButton) return;
     submitButton.disabled = isLoading;
-    submitButton.textContent = isLoading ? "Enviando..." : "Enviar Contato";
+    submitButton.textContent = isLoading
+      ? "Enviando..."
+      : "🚀 Solicitar Demonstração";
   }
 
   function showSuccess() {
